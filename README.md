@@ -1,0 +1,3 @@
+# F# Mutable Variable Gotcha
+
+This example demonstrates an unexpected behavior with mutable variables and function calls in F#. When the result of a function that operates on mutable variables is assigned to another mutable variable, changes to the original mutable variables after the function call do not reflect in the assigned variable's value. This can lead to subtle and difficult-to-debug errors. The solution shows how to achieve the expected behavior using functions that return values, eliminating the reliance on mutable variables to retain intermediate results.
